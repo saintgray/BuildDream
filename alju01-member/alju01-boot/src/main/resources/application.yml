@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: "DB URL" ## your db url
+    username: "usernmae" ## your db account name
+    password: "password" ## your db account password
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+# add more configuration
+swagger:
+  basePackage: 'com.jh.member'
+  title: 'alju01-member'
+  description: 'alju01-member api document & api tester'
+  termsOfServiceUrl: ''
