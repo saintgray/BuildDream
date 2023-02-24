@@ -16,13 +16,15 @@ const contextPath = '/';
 const router = [...ALJ01];
 const Router = () => (
     <BrowserRouter basename={contextPath}>
-        <Header />
-        <Routes>
-            { router.map(route => (
-                <Route key={route.id} exact path='/sample' element={<route.Component />}/>
-            ))}
-        </Routes>
-        <Footer />
+        <Header/>
+        <div className='gw'>
+            <Routes>
+                {router.map(route => (
+                    <Route key={route.id} exact path='/sample' element={<route.Component/>}/>
+                ))}
+            </Routes>
+        </div>
+        <Footer/>
     </BrowserRouter>
 );
 export default Router;

@@ -9,7 +9,9 @@ class Sample extends React.Component {
 
     render() {
         return (
-            <h1>this is sample component</h1>
+            <div>
+                <h1>this is sample component</h1>
+            </div>
         );
     }
 }
