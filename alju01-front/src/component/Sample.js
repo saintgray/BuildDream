@@ -1,7 +1,7 @@
-import React from 'react';
+import {Component} from 'react';
 
 
-class Sample extends React.Component {
+class Sample extends Component {
 
     constructor(props) {
         super(props);
